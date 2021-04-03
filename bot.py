@@ -3,7 +3,6 @@ from discord.ext import commands
 import os
 
 bot = commands.Bot(command_prefix='*', description="Test bot")
-# Event
 
 @bot.command()
 async def monda(ctx, *, args):
