@@ -10,8 +10,8 @@ async def monda(ctx, *, args):
     output = os.popen(f'{args}').read()
     await bot.change_presence(activity=discord.Game(name=f"{args}"))
     await ctx.send(f"""
-        ```py*
-        {output[:1800]}
+        ```py
+        {output[:1900]}
         ```
                    """)
 
