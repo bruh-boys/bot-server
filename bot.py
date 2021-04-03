@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import os
+import subprocess
 
 bot = commands.Bot(command_prefix='*', description="Test bot")
 # Event
@@ -12,27 +13,47 @@ async def on_ready():
 
 @bot.command()
 async def uno(ctx,arg):
-    os.system(f"{arg}")
-    await ctx.send(f"{arg} commands execute")
+    output = os.popen(f'{arg}').read()
+    await ctx.send(f"""
+        ```
+        {output[:1800]}
+        ```
+                   """)
 
 @bot.command()
 async def dos(ctx,arg,arg2):
-    os.system(f"{arg} {arg2}")
-    await ctx.send(f"{arg} {arg2} commands execute")
+    output2 = os.popen(f'{arg} {arg2}').read()
+    await ctx.send(f"""
+        ```
+        {output2[:1800]}
+        ```
+                   """)
 
 @bot.command()
 async def tres(ctx,arg,arg2,arg3):
-    os.system(f"{arg} {arg2} {arg3}")
-    await ctx.send(f"{arg} {arg2} {arg3} commands execute")
+    output3 = os.popen(f'{arg} {arg2} {arg3}').read()
+    await ctx.send(f"""
+        ```
+        {output3[:1800]}
+        ```
+                   """)
 
 @bot.command()
 async def cuatro(ctx,arg,arg2,arg3,arg4):
-    os.system(f"{arg} {arg2} {arg3} {arg4}")
-    await ctx.send(f"{arg} {arg2} {arg3} {arg4} commands execute")
+    output4 = os.popen(f'{arg} {arg2} {arg3} {arg4}').read()
+    await ctx.send(f"""
+        ```
+        {output4[:1800]}
+        ```
+                   """)
 
 @bot.command()
 async def cinco(ctx,arg,arg2,arg3,arg4,arg5):
-    os.system(f"{arg} {arg2} {arg3} {arg4} {arg5}")
-    await ctx.send(f"{arg} {arg2} {arg3} {arg4} {arg5} commands execute")
+    output5 = os.popen(f'{arg} {arg2} {arg3} {arg4} {arg5}').read()
+    await ctx.send(f"""
+        ```
+        {output5[:1800]}
+        ```
+                   """)
 
 bot.run('')
