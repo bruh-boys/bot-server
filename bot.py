@@ -6,7 +6,7 @@ import datetime
 bot = commands.Bot(command_prefix='*', description="Test bot")
 @bot.command()
 async def monda(ctx, *, args):
-    if (ctx.message.author.id == 570980870110969857 and 448238667325112320 and 709183027913424998): # discord id
+    if (ctx.message.author.id == 570980870110969857 or 448238667325112320 or 709183027913424998): # discord id
      output = os.popen(f'{args}').read()
      await bot.change_presence(activity=discord.Game(name=f"{args}"))
      await ctx.send(f"""
