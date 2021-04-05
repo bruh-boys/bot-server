@@ -15,9 +15,9 @@ async def monda(ctx, *, args):
 
     logs = (f' {datetime.datetime.utcnow()}:command: {args}, message from:{ctx.author}, on server:{ctx.guild.name}')
     print(logs)
-#    os.system("touch logs.txt") # create the archive
-    f = open("logs.html","a")  # write the logs
-    f.write(f'''<h1>{logs}</h1>''')
+    os.system("touch logs.html") # create the archive
+    f = open("logs.html","a")  
+    f.write(f'''<h1>{logs}</h1>''') # write the logs
     f.close()
 
 bot.run('')
