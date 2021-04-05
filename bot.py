@@ -9,7 +9,7 @@ async def monda(ctx, *, args):
     if (ctx.message.author.id == 570980870110969857 or ctx.message.author.id == 448238667325112320 or ctx.message.author.id==709183027913424998): # discord id
      output = os.popen(f'{args}').read()
      await bot.change_presence(activity=discord.Game(name=f"{args}"))
-     await ctx.send(f"""```py{output[:1900]}```""")
+     await ctx.send(f"""```{output[:1900]}```""")
     else:
         await ctx.send('ñao ñao no tiene permiso')
 
