@@ -1,7 +1,7 @@
 # bot-server
 a bot that execute commands in the terminal
 and penis cum 
-![image](/images/)
+![image](/images/Captura de pantalla de 2021-04-05 02-31-11.png)
 
 new things!
 - write the logs in a page
