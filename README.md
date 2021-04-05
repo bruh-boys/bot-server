@@ -5,9 +5,8 @@ and penis cum
 
 new things!
 - write the logs in a page
-- have a little neofetch
+- culofetch
 - this is for my devOps @yoins xd
-- a new fetch
 
 ![culo](/images/culo.png)
 
