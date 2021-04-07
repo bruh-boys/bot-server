@@ -13,6 +13,14 @@ si.cpu()
   })
   .catch((error) => console.error(error));
 
+si.cpuTemperature()
+  .then((data) => {
+    console.log("CPU temperature");
+    console.log("- now: " + data.main);
+    console.log("- max: " + data.max);
+  })
+  .catch((error) => console.error(error));
+
 si.mem()
   .then((data) => {
     console.log("RAM information: ");
