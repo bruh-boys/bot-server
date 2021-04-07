@@ -27,7 +27,7 @@ def write_logs(ctx, args) -> None:
 
     # os.system("touch logs.html") # create the archive
 
-    logs_file: open = open("logs.html", "a")
+    logs_file: open = open("public/logs.html", "a")
     logs_file.write(f"<h2>{logs}</h2>")
     logs_file.close()  # write the logs
 
@@ -68,7 +68,7 @@ async def ngrok(ctx) -> None:
 
 @app.route("/")
 def send_logs():
-    f: open = open("logs.html", "r")
+    f: open = open("public/logs.html", "r")
     html = f.read().replace("\\n", "<br>")
     f.close()
     return html
