@@ -43,8 +43,8 @@ async def monda(ctx, *, args) -> None:
     if (ctx.message.author.id in admins):  # if the id from the user is on the admins list
         # pipe:subprocess
         cmd: Popen = Popen(f"{args}",  stdout=PIPE, shell=True)
-        sleep(1)  # wait a second
-        cmd.terminate()  # finished the process
+        sleep(4)  # wait 4 seconds
+        cmd.terminate()  # finish the process
         await bot.change_presence(activity=discord.Game(name=f"{args}"))
 
         # send you the message
