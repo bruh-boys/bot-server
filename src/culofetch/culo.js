@@ -29,7 +29,7 @@ si.osInfo()
     console.log("- kernel: " + data.kernel);
   })
   .catch((error) => console.error(error));
-
+// emoji chill
 console.log(
   chalk.greenBright(
     figlet.textSync("culo fetch", {

@@ -5,7 +5,7 @@ from time import sleep
 from re import search
 import os
 import datetime
-# emoji chill
+# emoji chill chill
 from discord.ext import commands
 from requests import get
 from flask import Flask, render_template
