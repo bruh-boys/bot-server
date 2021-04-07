@@ -1,0 +1,16 @@
+{
+    "cSpell.words": [
+        "commands",
+        "datetime",
+        "discord",
+        "dotenv",
+        "ext",
+        "flask",
+        "from",
+        "import",
+        "load",
+        "os",
+        "subprocess",
+        "time"
+    ]
+}
