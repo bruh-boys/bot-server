@@ -11,6 +11,6 @@ new things!
 - better culofetch
 - this is for my devOps @yoins xd
 
-![culo](/images/culo.png)
+![culo](/images/jopo.png)
 ![ano](/images/logsImage.png)
 
