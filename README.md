@@ -8,8 +8,7 @@ new things!
 - write the logs in a page
 - now  it have a web server
 - if the command takes a long time, it ends it and sends you the output
-- 
-- culofetch
+- better culofetch
 - this is for my devOps @yoins xd
 
 ![culo](/images/culo.png)
