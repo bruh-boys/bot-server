@@ -1,25 +1,43 @@
-const si = require('systeminformation');
-const chalk=require("chalk")
-const figlet=require("figlet")
+const si = require("systeminformation");
+const chalk = require("chalk");
+const figlet = require("figlet");
 
-valueObject = {
-  cpu: 'brand, cores,speedMin,speedMax',
-  osInfo: 'platform, release, distro,kernel',
-  system: 'model, manufacturer',
-  mem: 'total,used,active',
-  diskLayout: 'type, size'
+si.cpu()
+  .then((data) => {
+    console.log("CPU Information:");
+    console.log("- manufucturer: " + data.manufacturer);
+    console.log("- brand: " + data.brand);
+    console.log("- speed: " + data.speed);
+    console.log("- cores: " + data.cores);
+    console.log("- physical cores: " + data.physicalCores);
+  })
+  .catch((error) => console.error(error));
 
-}
+si.mem()
+  .then((data) => {
+    console.log("RAM information: ");
+    console.log("- total memory: " + data.total);
+    console.log("- memory user: " + data.used);
+  })
+  .catch((error) => console.error(error));
 
-si.get(valueObject).then(data => console.log(data));
+si.osInfo()
+  .then((data) => {
+    console.log("OS information: ");
+    console.log("- plataform: " + data.platform);
+    console.log("- distro: " + data.distro);
+    console.log("- kernel: " + data.kernel);
+  })
+  .catch((error) => console.error(error));
 
-console.log(chalk.greenBright(figlet.textSync('culo fetch', {
-    font: 'ANSI Shadow',
-    horizontalLayout: 'default',
-    verticalLayout: 'default',
-    width: 50,
-    whitespaceBreak: true
-})));
-
-
-
+console.log(
+  chalk.greenBright(
+    figlet.textSync("culo fetch", {
+      font: "ANSI Shadow",
+      horizontalLayout: "default",
+      verticalLayout: "default",
+      width: 50,
+      whitespaceBreak: true,
+    })
+  )
+);
