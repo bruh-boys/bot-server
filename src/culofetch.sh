@@ -1,1 +1,1 @@
-node culofetch/culos
+node culofetch/culo.js
