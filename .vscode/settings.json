@@ -1,16 +1,37 @@
 {
     "cSpell.words": [
+        "abajo",
+        "api",
+        "aqui",
+        "body",
+        "bot",
+        "co",
         "commands",
+        "content",
+        "coño",
         "datetime",
+        "def",
         "discord",
         "dotenv",
+        "el",
         "ext",
         "flask",
         "from",
+        "get",
+        "http",
         "import",
         "load",
+        "ngrok",
+        "o",
         "os",
+        "pon",
+        "puto",
+        "requests",
+        "run",
         "subprocess",
-        "time"
+        "time",
+        "token",
+        "tunnels",
+        "yoins"
     ]
 }
