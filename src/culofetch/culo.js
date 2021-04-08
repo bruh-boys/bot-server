@@ -8,16 +8,15 @@ si.cpu()
     console.log(`- manufacturer: ${data.manufacturer}`);
     console.log(`- brand: ${data.brand}`);
     console.log(`- speed: ${data.speed}`);
-    console.log(`- cores: ${data.cores}`);
-    console.log(`- threads: ${data.physicalCores}`);
+    console.log(`- threads: ${data.cores}`);
+    console.log(`- cores: ${data.physicalCores}`);
   })
   .catch((error) => console.error(error));
 
 si.cpuTemperature()
   .then((data) => {
     console.log("CPU temperature");
-    console.log(`- now: ${data.main}`);
-    console.log(`- max: ${data.main}`);
+    console.log(`- temperature: ${data.main}`);
   })
   .catch((error) => console.error(error));
 
