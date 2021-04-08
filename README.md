@@ -14,3 +14,9 @@ new things!
 ![culo](/images/jopo.png)
 ![ano](/images/logsImage.png)
 
+<p>
+-thanks to nerd: https://github.com/nerdthatnoonelikes
+</p>
+
+
+
