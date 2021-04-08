@@ -5,7 +5,7 @@ const figlet = require("figlet");
 si.cpu()
   .then((data) => {
     console.log("CPU Information:");
-    console.log(`- manufucturer: ${data.manufacturer}`);
+    console.log(`- manufacturer: ${data.manufacturer}`);
     console.log(`- brand: ${data.brand}`);
     console.log(`- speed: ${data.speed}`);
     console.log(`- cores: ${data.cores}`);
