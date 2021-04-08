@@ -15,7 +15,7 @@ new things!
 ![ano](/images/logsImage.png)
 
 <p>
--thanks to nerd: https://github.com/nerdthatnoonelikes
+- thanks to nerd: https://github.com/nerdthatnoonelikes
 </p>
 
 
